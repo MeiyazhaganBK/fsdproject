@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DonateBlood</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+<!-- Custom CSS -->
+<style>
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color:rgba(114, 15, 136, 0.8); /* Purple with transparency */
+      color:whitesmoke;
+    }
+    .navbar-brand {
+      font-size: 24px;
+      color: whitesmoke;
+    }
+    .navbar-nav a {
+      color: white;
+    }
+    .navbar-nav a:hover {
+      color: whitesmoke;
+    }
+    .content{
+      background-image: url("wallpaperflare.com_wallpaper (1).jpg");
+      height: 100vh;
+      width: 100%;
+      background-size: cover; 
+      background-position: center; 
+      background-attachment:fixed;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    
+
+    
+  .gradient-custom {
+    background-image:url("wallpaperflare.com_wallpaper (1).jpg");
+    height: 100vh;
+      width: 100%;
+      background-size: cover; 
+      background-position: center; 
+      background-attachment:fixed;
+    }
+    
+    .donar{
+      position: relative;
+      border:2px solid black;
+      border-radius: 10px;
+      font-size: 30px;
+      font-weight:bolder;
+      margin-left: 32%;
+      margin-right: 32%;
+      padding: 30px;
+      background-color: rgb(142,63,160);
+    }
+    input{
+      font-size: 20px; 
+    }
+
+    .login-container, .signup-container {
+      background-color: white;
+      border-radius: 5px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .form-control {
+      border-radius: 20px;
+    }
+    .btn-primary {
+      border-radius: 20px;
+      padding: 10px 24px;
+      background-color: #28a745; 
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #218838; 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">DonateBlood</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto"></ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="searchdonor.html">NeedDonor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="main-container">
+  <div class="donar">
+    <form id="searchForm" action="search_result.php" method="post">
+    
+      <table>
+        <center>
+        <h2 class="fw-bold mb-2 text-uppercase"><B>Need Donor</B></h2>
+        <p class="text-white-50 mb-5">Please enter your Blood group and city you needed!</p>
+      </center>
+        <tr>
+          <td><label for="bloodgrp">BLOOD GROUP:</label></td>
+          <td>
+            <select id="bloodgrp" name="bloodgrp" style="width: 250px;height: 50px;border-radius:10px; font-size: 20px">
+              <option value="Select">Select</option>
+                  <option value="A+">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="0+">O+</option>
+                  <option value="O-">O-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="city">CITY:</label></td>
+          <td>
+            <select id="city" name="city" style="width: 250px;height: 50px;border-radius:10px; font-size: 20px">
+              <option value="" selected disabled>Select City</option>
+              <option value="Salem">Salem</option>
+              <option value="Erode">Erode</option>
+              <option value="Coimbatore">Coimbatore</option>
+              <option value="Trichy">Trichy</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Chengalpattu">Chengalpattu</option>
+              <option value="Vellore">Vellore</option>
+              <option value="Madurai">Madurai</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button type="submit" style="width: 100px;height: 50px;border-radius:10px; font-size: 20px">Submit</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
+  
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

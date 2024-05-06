@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DonateBlood</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyC8bU/D5z9L4AC72d1FQBAW/8hL4xqB9L" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital@0;1&family=Varela&family=Varela+Round&display=swap" rel="stylesheet">
+
+<style>
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .content-section {
+      height: 100vh;
+    }
+    .row {
+      height: 100%;
+    }
+    .col-md-6 {
+      overflow: auto; /* Enable scrolling if content exceeds viewport */
+      padding: 20px; /* Add padding for better readability */
+      color: white; /* Set text color to white for better contrast */
+    }
+    .col-md-6 h2 {
+      color: white; /* Adjust heading color */
+    }
+    hr {
+      border-color: white; /* Adjust horizontal rule color */
+    }
+    .background-image {
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+  
+  .navbar {
+    background-color:rgba(114, 15, 136, 0.8); /* Purple with transparency */
+    color:whitesmoke;
+  }
+  .navbar-brand {
+    font-size: 24px;
+    color: whitesmoke;
+  }
+  .navbar-nav a {
+    color: white;
+  }
+  .navbar-nav a:hover {
+    color: whitesmoke;
+  }
+  .content{
+    background-image: url("wallpaperflare.com_wallpaper (1).jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover; 
+    background-position: center; 
+    background-attachment:fixed;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  
+.gradient-custom {
+  background-image:url("");
+  height: 100vh;
+    width: 100%;
+    background-size: cover; 
+    background-position: center; 
+    background-attachment:fixed;
+  }
+  
+  .content{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-weight:bolder;
+  }
+
+  input{
+    font-size: 20px; 
+  }
+
+
+  .bgimg { 
+    background-image: url('wallpaperflare.com_wallpaper (1).jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment:fixed; 
+    height: 100vh;
+    width: 100%;  
+    position: relative; /* Ensure relative positioning for absolute elements */ 
+} 
+ 
+.imgtext { 
+    position: absolute;  
+    font-size: 100px; 
+    color:azure; 
+    padding-bottom:50px;
+    font-family: 'Josefin Sans', sans-serif; /* Corrected font name */ 
+    top: 80%; /* Adjusted position */ 
+    transform: translate(-50%, -50%);     
+    z-index: 2; 
+} 
+.row { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px; 
+    color: rgb(1, 1, 1); 
+    font-size: large; 
+    padding: 80px; 
+    align-items: center; 
+} 
+ 
+.container-section { 
+    padding: 3rem 0; 
+} 
+
+.highlight{ 
+    background-color: paleturquoise; 
+    font-size: large; 
+} 
+
+  .login-container, .signup-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .form-control {
+    border-radius: 20px;
+  }
+  .btn-primary {
+    border-radius: 20px;
+    padding: 10px 24px;
+    background-color: #28a745; 
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #218838; 
+  }
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">DonateBlood</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signin.html">Signup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="bgimg"> 
+    <center><span class="imgtext">WELCOME TO DONATEBLOOD</span> </center>
+  </div>
+
+<div class="container-fluid content-section">
+  <div class="row background-image" style="background-image: url('wallpaperflare.com_wallpaper (2).jpg');">
+    <div>
+      <h2>ABSTRACT</h2>
+      <p>
+        DonateBlood is a web-based application developed to facilitate the process of blood donation by connecting donors with recipients in need. The application provides a user-friendly platform where individuals can easily search for blood donors based on various criteria such as location, blood group, and availability.
+      </p>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div class="container-fluid content-section">
+  <div class="row background-image" style="background-image: url('wallpaperflare.com_wallpaper (1).jpg');">
+    
+    <div class="col-md-6">
+
+    </div>
+    <div class>
+  
+      <h2>Overview</h2>
+      <p>
+        <ul>
+          <li>DonateBlood is a dynamic web application developed using HTML, CSS, JavaScript, and MySQL database, hosted on XAMPP server environment. This innovative platform revolutionizes the blood donation process by seamlessly connecting donors with recipients in need.
+          </li>
+          <li>
+            Utilizing a user-friendly interface, DonateBlood allows members of the public to easily search for blood donors based on various criteria such as location, blood group, and availability. Through a simple registration form, users can create an account and provide essential details including name, city, blood group, age, and gender. These details are securely stored in a MySQL database, ensuring data integrity and privacy.
+          </li>
+          <li>
+            DonateBlood represents a significant advancement in leveraging technology to address critical healthcare needs. By harnessing the power of HTML, CSS, JavaScript, and MySQL, this platform aims to foster a culture of altruism, compassion, and collective responsibility towards saving lives through blood donation.
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div class="container-fluid content-section">
+  <div class="row background-image" style="background-image: url('wallpaperflare.com_wallpaper (4).jpg');">
+    <div>
+      <h2>Key Features</h2>
+      <p>
+        <ul>
+          <li>
+            Donors Registration: Donors can create an account by filling out a simple registration form with personal details including name, city, blood group, age, and gender.
+          </li>
+          <li>
+            Donor Search: The app allows users to search for blood donors based on specific criteria, such as location and blood group, to find suitable matches for their needs.
+          </li>
+          <li>
+            Real-timeNotifications: DonateBlood sends real-time notifications to alert users of urgent blood requests, enabling timely responses and potentially life-saving donations.(Feature implementation-pending)
+          </li>
+          <li>
+            Donor Matching: Donors can update their availability status and preferences, ensuring that recipients can easily locate donors who are ready to contribute.(Feature implementation-pending)
+          </li>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <hr>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
